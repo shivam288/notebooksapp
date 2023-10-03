@@ -1,0 +1,12 @@
+{
+  "name": "notesbook-app",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "heroku-prebuild": "cd server && npm install",
+    "start": "cd server && npm run start",
+    "deploy": "cd client && npm run build && cd .. && git add . && git commit -m 'deploy' && git push heroku master" 
+  },
+  "author": "rupeshghosh10",
+  "license": "ISC"
+}
